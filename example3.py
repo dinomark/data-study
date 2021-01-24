@@ -8,6 +8,7 @@ for row in data:
     if row[-1] == '':
         # -999라는 숫자를 넣는다.
         row[-1] = -999
+    # str -> float 형으로 형변환한다.
     row[-1] = float(row[-1])
     print(row)
 f.close()
